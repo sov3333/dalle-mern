@@ -16,9 +16,23 @@ Frontend:
 
 5. `npm i file-saver`
 
+Backend:
+1. In root, type `mkdir server`
+2. `cd server`
+3. `npm init -y`
+4. In the package.json file:
+- Add to scripts: `"start": "nodemon index"`.
+- Add below description: `"type": "module",` so that we can use ES6 import/exports instead of require statements.
+5. `npm i cloudinary cors dotenv express mongoose nodemon openai`
+
 ### Run
 
-Start server:
+Start frontend in `client` directory:
 ```
 npm run dev
+```
+
+Start server in `server` directory:
+```
+npm start
 ```
